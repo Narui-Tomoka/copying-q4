@@ -3,39 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Mag88</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__mainvisual">
-        <h1 class="header__title">Mag88</h1>
-      </div>
+    <header class="l-header">
+      <h1 class="l-header-logo">Mag88</h1>
+      <div class="l-header__mainvisual"></div>
     </header>
-    <main class="main">
-      <section class="article wrapper">
-        <h2 class="section__title">
+    <main class="l-main">
+      <section class="article l-wrapper">
+        <h2 class="section-title l-center">
           A special, long article in a newspaper or magazine
         </h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        <p class="l-center">
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br />
           テキストテキストテキストテキストテキストテキストテキストテキスト
         </p>
-        <div class="article__menu">
-          <a class="article__menu--link" href="#">
-            <img class="article__menu--img" src="" alt="メニュー画像" />
-            <div class="article__menu--bg">
-              <h3 class="article__menu--title">Archive</h3>
-              <p class="article__menu--text">
-                テキストテキストテキストテキストテキストテキストテキスト
+        <div class="article-menu">
+          <a class="article-menu__link" href="#">
+            <img
+              class="article-menu__img"
+              src="img/500x500.png"
+              alt="メニュー画像"
+            />
+            <div class="article-menu__bg">
+              <h3 class="article-menu__title l-center">Archive</h3>
+              <p class="article-menu__text l-center">
+                テキストテキストテキストテキスト<br />テキストテキストテキスト
               </p>
             </div>
           </a>
-          <a class="article__menu--link" href="#">
-            <img class="article__menu--img" src="" alt="メニュー画像" />
-            <div class="article__menu--bg">
-              <h3 class="article__menu--title">Archive</h3>
-              <p class="article__menu--text">
-                テキストテキストテキストテキストテキストテキストテキスト
+          <a class="article-menu__link" href="#">
+            <img
+              class="article-menu__img"
+              src="img/500x500.png"
+              alt="メニュー画像"
+            />
+            <div class="article-menu__bg">
+              <h3 class="article-menu__title l-center">New</h3>
+              <p class="article-menu__text l-center">
+                テキストテキストテキストテキスト<br />テキストテキストテキスト
               </p>
             </div>
           </a>
@@ -43,17 +51,93 @@
       </section>
       <section class="fashion">
         <!-- ↑画像をbackground-imageで入れる -->
-        <div class="fashion__container wrapper">
-          <h2 class="section__title">Fashion & Style</h2>
-          <p></p>
-          <a href="#"></a>
+        <div class="fashion__container l-wrapper l-center">
+          <h2 class="section-title l-center">Fashion & Style</h2>
+          <p class="l-center">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <p class="l-center">
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <a class="btn btn-readmore" href="#">Read More</a>
         </div>
       </section>
-      <section class="catalog">
-        <h2 class="section__title">Catalog</h2>
-        <h2 class="section__title">Antique</h2>
-      </section>
+      <div class="section-container">
+        <section class="catalog l-wrapper">
+          <div class="catalog-container">
+            <div>
+              <img class="catalog-img" src="img/500x500.png" alt="てきすと" />
+            </div>
+            <div class="catalog-container-text">
+              <h2 class="section-title l-center">Catalog</h2>
+              <p class="catalog-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <p class="catalog-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-container">
+        <section class="antique l-center l-wrapper">
+          <div class="antique-container">
+            <div>
+              <img class="antique-img" src="img/500x500.png" alt="てきすと" />
+            </div>
+            <div class="antique-container-text">
+              <h2 class="section-title l-center">Catalog</h2>
+              <p class="antique-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <p class="antique-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <a class="btn btn-readmore" href="#">Read More</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="l-footer">
+      <div class="l-footer-bg">
+        <div class="l-footer-menu l-wrapper">
+          <div class="l-footer-container">
+            <a class="l-footer-logo" href="#">Mag88</a>
+          </div>
+          <div class="l-footer-container">
+            <h3 class="l-footer-title">タイトル</h3>
+            <p class="l-footer-item">テキストテキストテキスト</p>
+            <p class="l-footer-item">テキストテキストテキスト</p>
+            <p class="l-footer-item">テキストテキストテキスト</p>
+            <p class="l-footer-item">テキストテキストテキスト</p>
+            <p class="l-footer-item">テキストテキストテキスト</p>
+          </div>
+          <div class="l-footer-container">
+            <h3 class="l-footer-title">タイトルタイトルタイトル</h3>
+            <p class="l-footer-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer-copy l-center">
+        <p>© Mag88</p>
+      </div>
+    </footer>
   </body>
 </html>

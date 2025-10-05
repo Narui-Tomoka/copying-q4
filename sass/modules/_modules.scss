@@ -1,0 +1,30 @@
+// 再利用可能な部品を定義
+// card,nav,buttonなどファイルを分けることが多いが記述量が多くないので1ファイルにまとめている
+@use "../base/mixins" as mix;
+
+.section-title {
+  margin: 0 auto 20px;
+}
+
+.btn {
+  @include mix.btn;
+  &-readmore {
+    font-size: 0.8rem;
+    margin: 30px auto;
+  }
+  &:hover {
+    @include mix.hover;
+  }
+}
+
+.catalog {
+  &-text {
+    margin-top: 40px;
+  }
+}
+
+.antique {
+  &-text {
+    margin-top: 40px;
+  }
+}

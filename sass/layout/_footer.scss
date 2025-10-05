@@ -1,0 +1,45 @@
+// フッター
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+.l-footer {
+  &-bg {
+    background-color: vars.$footer-bg;
+    padding: 120px 0;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+  }
+  &-logo {
+    @include mix.logo($bg-color: #222);
+    color: vars.$footer-color;
+    font-size: 1.8rem;
+    &:hover {
+      @include mix.hover;
+    }
+  }
+  &-container {
+    width: 30%;
+  }
+  &-title {
+    color: vars.$footer-color;
+    margin-bottom: 15px;
+  }
+  &-item {
+    color: vars.$footer-color;
+    font-size: 0.8rem;
+    &::before {
+      content: "- ";
+      color: vars.$footer-color;
+    }
+  }
+  &-text {
+    color: vars.$footer-color;
+    font-size: 0.8rem;
+  }
+  &-copy {
+    font-size: 0.7rem;
+    padding: 30px 0;
+  }
+}

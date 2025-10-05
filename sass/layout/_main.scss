@@ -1,0 +1,75 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+// ページ独自のスタイル
+.article {
+  padding: vars.$section-padding;
+  &-menu {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    &__link {
+      position: relative;
+      &:hover {
+        @include mix.hover;
+      }
+    }
+    &__bg {
+      position: absolute; // 親要素__linkの中央に配置
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+    &__title {
+      color: #fff;
+    }
+    &__text {
+      color: #fff;
+      white-space: nowrap; // __bgの移動前の場所からだと要素がはみ出すため改行される。それを防ぐための指定
+    }
+  }
+}
+
+.fashion {
+  padding: vars.$section-padding;
+  padding-bottom: 300px;
+  margin-bottom: 50px;
+  background: url(../img/1920x550.png) center/cover;
+}
+
+.section-container {
+  background-color: vars.$catalog-bg;
+}
+
+.catalog {
+  padding: vars.$section-padding;
+  &-container {
+    display: flex;
+    & div {
+      max-width: 50%;
+    }
+    &-text {
+      padding: 50px 0 50px 50px;
+    }
+  }
+  &-img {
+    max-width: 100%;
+  }
+}
+
+.antique {
+  padding: vars.$section-padding;
+  &-container {
+    display: flex;
+    flex-direction: row-reverse;
+    & div {
+      max-width: 50%;
+    }
+    &-text {
+      padding: 50px 50px 50px 0;
+    }
+  }
+  &-img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+// ミックスインの定義
+
+@mixin logo($color: #fff, $bg-color: #000) {
+  color: $color;
+  background-color: $bg-color;
+  padding: 0.01rem 0.5rem 0.2rem;
+}
+
+@mixin btn($color: #000) {
+  color: $color;
+  border: 1px solid $color;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+}
+
+@mixin hover {
+  opacity: 0.7;
+}
