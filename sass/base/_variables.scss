@@ -5,3 +5,8 @@ $section-padding: 50px 0;
 $catalog-bg: #eee;
 $footer-color: #fff;
 $footer-bg: #333;
+
+// ブレイクポイント
+$breakpoints: (
+  "sp": "screen and (max-width: 899px)",
+);

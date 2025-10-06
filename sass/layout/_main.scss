@@ -5,27 +5,40 @@
   padding: vars.$section-padding;
   &-menu {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     margin-top: 50px;
-    &__link {
+    gap: 20px;
+    @include mix.mq(sp) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-img {
+      max-width: 100%;
+    }
+    &-link {
       position: relative;
+      width: 48%;
+      @include mix.mq(sp) {
+        width: 100%;
+      }
       &:hover {
         @include mix.hover;
       }
     }
-    &__bg {
-      position: absolute; // 親要素__linkの中央に配置
+    &-bg {
+      padding: 15px 10px;
+      position: absolute; // 親要-linkの中央に配置
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: rgba($color: #000000, $alpha: 0.4);
     }
-    &__title {
+    &-title {
       color: #fff;
     }
-    &__text {
+    &-text {
       color: #fff;
-      white-space: nowrap; // __bgの移動前の場所からだと要素がはみ出すため改行される。それを防ぐための指定
+      white-space: nowrap; // -bgの移動前の場所からだと要素がはみ出すため改行される。それを防ぐための指定
     }
   }
 }
@@ -45,15 +58,24 @@
   padding: vars.$section-padding;
   &-container {
     display: flex;
+    @include mix.mq(sp) {
+      flex-direction: column;
+    }
     & div {
       max-width: 50%;
+      @include mix.mq(sp) {
+        max-width: 100%;
+      }
     }
     &-text {
-      padding: 50px 0 50px 50px;
+      padding: 3% 0 1% 1%;
     }
   }
   &-img {
-    max-width: 100%;
+    max-width: 90%;
+    @include mix.mq(sp) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -61,15 +83,23 @@
   padding: vars.$section-padding;
   &-container {
     display: flex;
-    flex-direction: row-reverse;
+    @include mix.mq(sp) {
+      flex-direction: column;
+    }
     & div {
       max-width: 50%;
+      @include mix.mq(sp) {
+        max-width: 100%;
+      }
     }
     &-text {
-      padding: 50px 50px 50px 0;
+      padding: 3% 0 1% 1%;
     }
   }
   &-img {
-    max-width: 100%;
+    max-width: 90%;
+    @include mix.mq(sp) {
+      max-width: 100%;
+    }
   }
 }

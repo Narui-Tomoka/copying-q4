@@ -1,6 +1,11 @@
+@use "../base/mixins" as mix;
+
 .l-wrapper {
   max-width: 980px;
   margin: 0 auto;
+  @include mix.mq(sp) {
+    max-width: 96%;
+  }
 }
 
 .l-center {

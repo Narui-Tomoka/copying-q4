@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "./variables" as vars;
 // ミックスインの定義
 
 @mixin logo($color: #fff, $bg-color: #000) {
@@ -9,10 +11,17 @@
 @mixin btn($color: #000) {
   color: $color;
   border: 1px solid $color;
-  padding: 0.8rem 2rem;
   display: inline-block;
+  padding: 0.8rem 2rem;
 }
 
 @mixin hover {
   opacity: 0.7;
+}
+
+// メディアクエリ
+@mixin mq($breakpoint) {
+  @media #{map.get(vars.$breakpoints,$breakpoint)} {
+    @content;
+  }
 }
