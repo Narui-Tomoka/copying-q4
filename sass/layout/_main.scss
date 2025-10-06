@@ -88,12 +88,13 @@
     }
     & div {
       max-width: 50%;
+      text-align: right; // 子要素のimgタグを右寄せ
       @include mix.mq(sp) {
         max-width: 100%;
       }
     }
     &-text {
-      padding: 3% 0 1% 1%;
+      padding: 3% 1% 1% 0;
     }
   }
   &-img {
